@@ -21,7 +21,7 @@ await connectDB();
 await connectCloudinary();
 
 // allow origins to access our back-end - cors
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['http://localhost:5173', 'https://gro-kart-three.vercel.app']
 
 app.post('/stripe', express.raw({type: 'application/json'}), stripeWebhooks);
 
